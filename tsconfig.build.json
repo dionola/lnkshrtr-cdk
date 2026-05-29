@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["infra/**/*", "shared/**/*", "src/**/*"],
+  "exclude": ["node_modules", "dist", "cdk.out", "scripts/**/*"]
+}

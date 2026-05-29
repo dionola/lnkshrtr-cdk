@@ -1,0 +1,21 @@
+{
+  "app": "npx ts-node -P tsconfig.json infra/bin/app.ts",
+  "watch": {
+    "include": ["**"],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.js",
+      "**/*.d.ts",
+      "dist/**",
+      "cdk.out/**",
+      "node_modules/**"
+    ]
+  },
+  "context": {
+    "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
+    "@aws-cdk/core:stackRelativeExports": "both",
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": true
+  }
+}

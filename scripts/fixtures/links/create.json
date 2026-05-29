@@ -1,0 +1,8 @@
+{
+  "body": {
+    "url": "https://example.com",
+    "isPublic": true,
+    "isPasswordProtected": false,
+    "type": "link"
+  }
+}
