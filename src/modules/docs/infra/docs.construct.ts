@@ -9,18 +9,16 @@ interface DocsConstructProps {
   api: HttpApi;
   stage: string;
   apiEndpoint: string;
-  region: string;
 }
 
 export class DocsConstruct extends Construct {
   constructor(scope: Construct, id: string, props: DocsConstructProps) {
     super(scope, id);
 
-    const { api, stage, apiEndpoint, region } = props;
+    const { api, stage, apiEndpoint } = props;
 
     const env = {
       STAGE: stage,
-      AWS_REGION: region,
       API_ENDPOINT: apiEndpoint,
     };
 

@@ -98,7 +98,6 @@ export class LnkshrtrStack extends Stack {
     new DocsConstruct(this, "Docs", {
       api,
       stage,
-      region,
       apiEndpoint: api.apiEndpoint,
     });
 
